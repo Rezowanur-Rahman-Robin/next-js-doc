@@ -31,7 +31,7 @@ export default function Post({postData}) {
 }
 
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   // Fetch necessary data for the blog post using params.id
   const postData = await getPostData(params.id);
   return {
