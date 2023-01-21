@@ -56,7 +56,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getServerSideProps({params}) {
+export async function getStaticProps({params}) {
   // Fetch necessary data for the blog post using params.title
 
   //const blog = blogs.filter((blog)=> blog.title ===params.title)

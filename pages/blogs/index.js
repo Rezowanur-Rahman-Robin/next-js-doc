@@ -148,7 +148,7 @@ const Blogs = ({blogs}) => {
 
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 
   const res = await fetch(`${BASE_URL}${endpoint.blog}`);
   const resJson = await res.json()
